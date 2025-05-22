@@ -1,0 +1,10 @@
+site_name: "Documentação Gateway Service"
+theme:
+  name: material
+
+nav:
+  - Introdução: index.md
+  - Arquitetura: arquitetura.md
+  - Filtros Globais: filtros.md
+  - Endpoint Info: info.md
+  - Setup e Execução: setup.md
