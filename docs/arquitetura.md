@@ -1,6 +1,6 @@
 # Arquitetura
 
-## Estrutura de pastas
+## Estrutura de Pastas
 
 ```bash
 src/main/java/store/gateway/
@@ -12,6 +12,8 @@ src/main/java/store/gateway/
 │ ├── RouterValidator.java # Verifica se rota é protegida
 │ ├── TokenOut.java # Token recebido
 │ └── SolveOut.java # ID extraído do token
+└── resources/
+│ └── application.yaml # Configurações de ambiente
 ```
 
 ---
