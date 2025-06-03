@@ -250,6 +250,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#integracao-com-jenkins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integração com Jenkins
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integração com Jenkins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-que-serve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para que serve?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -381,6 +405,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#integracao-com-jenkins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integração com Jenkins
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integração com Jenkins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-que-serve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para que serve?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -414,6 +462,22 @@
 <li>Consultar o <code>auth-service</code> para validar tokens JWT</li>
 <li>Repassar o <code>idAccount</code> no header para os microsserviços internos</li>
 </ul>
+<hr />
+<h2 id="integracao-com-jenkins">Integração com Jenkins</h2>
+<p>Este projeto conta com um arquivo Jenkinsfile (na raiz do repositório) que define uma pipeline de integração contínua para compilar automaticamente o módulo sempre que houver alterações no repositório.</p>
+<h3 id="para-que-serve">Para que serve?</h3>
+<ul>
+<li>
+<p>Compilação automatizada: toda alteração no repositório dispara o build do Maven, detectando problemas de compilação antes do merge.</p>
+</li>
+<li>
+<p>Imagens Docker consistentes: gera e publica automaticamente imagens multiplataforma, facilitando o deploy em diferentes ambientes (x86_64 e ARM).</p>
+</li>
+<li>
+<p>Segurança das credenciais: utiliza credenciais armazenadas no Jenkins (identificador dockerhub-credential), evitando exposição de senhas no código.</p>
+</li>
+</ul>
+<p>Dessa forma, a integração com Jenkins garante que o gateway-service esteja sempre compilando e empacotado corretamente, com uma imagem Docker pronta para ser implantada nos clusters de produção ou QA.</p>
 
 
 
